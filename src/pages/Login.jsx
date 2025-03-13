@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { LucideMail, LucideLock } from "lucide-react";
-import logo from "../assets/logo.png";
+import loginIllustration from "../assets/login-illustration.svg";
 import InputField from "../components/ui/InputField";
 import Checkbox from "../components/ui/Checkbox";
 
@@ -28,10 +28,12 @@ function Login() {
 
   return (
     <div className="h-screen flex">
-     
+      <div className="hidden md:flex w-1/2 bg-[#F8F9FC] items-center justify-center">
+        <img src={loginIllustration} alt="Login Illustration" className="w-3/4" />
+      </div>
       <div className="w-full md:w-1/2 flex items-center justify-center px-6">
         <div className="w-full max-w-md">
-          <img src={logo} alt=" Logo" className="w-40 mb-4" />
+        
 
           <h2 className="text-2xl font-bold text-gray-800">Welcome  </h2>
           <p className="text-gray-500 mb-6">Your Admin Dashboard</p>
