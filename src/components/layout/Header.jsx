@@ -57,7 +57,7 @@ function Header() {
       <div className="flex items-center space-x-6">
         
         {/* Notification Dropdown */}
-        {/* <div className="relative" ref={notificationRef}>
+        <div className="relative" ref={notificationRef}>
           <button onClick={toggleNotification} className="relative flex items-center space-x-2 focus:outline-none">
             <div className="relative">
               <div className="w-8 h-8 bg-[#EFF6FF] rounded-full flex items-center justify-center text-gray-700">
@@ -98,10 +98,10 @@ function Header() {
               </motion.div>
             )}
           </AnimatePresence>
-        </div> */}
+        </div>
 
         {/* Profile Dropdown */}
-        {/* <div className="relative" ref={profileRef}>
+        <div className="relative" ref={profileRef}>
           <button onClick={toggleProfile} className="flex items-center space-x-2 focus:outline-none">
             <img src={UserImage} alt="Profile" className="w-8 h-8 rounded-full border border-gray-300" />
           </button>
@@ -139,8 +139,8 @@ function Header() {
               </motion.div>
             )}
           </AnimatePresence>
-        </div> */}
-      <div className="flex space-x-4">
+        </div>
+      {/* <div className="flex space-x-4">
         <motion.button
           whileHover={{ scale: 1.05, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)" }}
           whileTap={{ scale: 0.95 }}
@@ -157,7 +157,7 @@ function Header() {
           <LucideLogIn className="w-4 h-4 mr-2" />
           Login
         </motion.button>
-      </div>
+      </div> */}
       </div>
     </header>
   );
